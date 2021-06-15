@@ -1,0 +1,16 @@
+{
+  menuItems {
+    nodes {
+      label
+      parentDatabaseId
+      databaseId
+      linkRelationship
+      connectedObject {
+        ... on Page {
+          pageId
+          slug
+        }
+      }
+    }
+  }
+}

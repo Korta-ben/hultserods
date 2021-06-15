@@ -1,0 +1,103 @@
+
+body{
+  @apply bg-hultChalk;
+  @apply text-base;
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  color:#4E4E4E
+}
+
+.hult-heading{
+  font-family: "Crimson Text", serif;
+}
+
+.logo{
+  @apply pb-12 ;
+  margin-top: 60px;
+}
+
+div.navicon{
+  @apply block w-5  relative mb-1;
+  transition: background .2s ease-out;
+  background: #47494e;
+  height: 2px;
+}
+.menu-toggle:focus ~ .navicon:first-child{ transform: rotate(-45deg); top: 6px; }
+.menu-toggle:focus ~ .navicon:last-child{ transform: rotate(45deg); top: -6px; }
+.menu-toggle:focus ~ .navicon:nth-child(2){
+  background:transparent;
+}
+
+.menu{
+
+
+
+}
+.menu-toggle:focus ~ .menu{
+  @apply block absolute;
+}
+ ul.menu li{
+    /*padding:0 21px 0 21px;*/
+}
+
+.hr-below-menu{
+  @apply bg-hultBrown;
+  width: 1056px;
+  margin:34px 0 32px 0;
+
+}
+
+.content-bg{
+  background-image: url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/blomma_liggande-1.svg'),
+  url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/blomma_liggande-2.svg');
+  background-position: left -55%, right 155% ;
+  background-repeat: no-repeat;
+
+}
+.font-crimson {
+  font-family: "Crimson Text",serif;
+}
+
+.nuxt-link-active{
+  @apply text-hultRoseGold font-bold;
+}
+#home .manual-card-heading{
+  text-align: center;
+}
+@responsive {
+  .manual-card:first-child {
+    @apply m-0 mr-manualCardGap
+  }
+
+  .manual-card:last-child{
+    @apply m-0 ml-manualCardGap
+  }
+  .post-card > div:nth-child(odd) {
+    background-image: url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/liggande_vit-1.svg');
+
+    background-repeat: no-repeat;
+    background-position:90% 120%;
+  }
+  .post-card > div:nth-child(even) {
+     @apply flex-row-reverse ;
+    background-image: url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/liggande_vit-2.svg');
+
+    background-repeat: no-repeat;
+    background-position: 30% 120%;
+  }
+
+  .pricelist ul>li:nth-child(odd){
+        @apply col-span-2 pr-12 border-r ;
+  }
+  .pricelist ul>li:nth-child(odd).div:first-child{
+    @apply w-3/4;
+  }
+  .pricelist ul>li:nth-child(even){
+    @apply col-span-4 pl-12;
+  }
+}
+
+
+
