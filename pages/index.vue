@@ -1,39 +1,30 @@
 <template>
-
   <div id="home">
     <HeaderImage />
 
-
-    <PageContent :pageContent="pageContent"/>
-
+    <PageContent :page-content="pageContent" />
+    <PageBlocks :page-blocks="pageBlocks" />
   </div>
-
 </template>
 
 <script>
 
-  import axios from 'axios'
+import axios from 'axios'
+export default {
+  data () {
+    return {
+      pageContent: [],
+      pageBlocks:[]
+    }
+  },
+  async fetch () {
+    const { data } = await axios.get('https://hultapi.kortaben.work/wp-json/wp/v2/pages/12')
 
-  export default {
-    data(){
-      return {
-        pageContent:[],
-      }
-    },
-
-    async fetch() {
-      const { data } = await axios.get('https://hultapi.kortaben.work/wp-json/wp/v2/pages/12')
-
-      this.pageContent = data
-    },
-
-
-
-
-
-
+    this.pageContent = data
+    this.pageBlocks = data.acf
   }
 
+}
 
 </script>
 

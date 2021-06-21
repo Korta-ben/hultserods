@@ -1,26 +1,5 @@
 <template>
 
-<!--  <div >-->
-<!--    <CoolLightBox-->
-<!--      :items="items"-->
-<!--      :index="index"-->
-<!--      @close="index = null">-->
-<!--    </CoolLightBox>-->
-
-<!--    <div class="images-wrapper">-->
-<!--      <div-->
-<!--        class="image"-->
-<!--        v-for="(image, imageIndex) in items"-->
-<!--        :key="imageIndex"-->
-<!--        @click="index = imageIndex"-->
-<!--        :style="{ backgroundImage: `url(${image.url})` }"-->
-<!--      ></div>-->
-
-<!--    </div>-->
-
-<!--&lt;!&ndash;    <img v-for="(image, imageIndex) in items" :key="imageIndex" :src="image.url">&ndash;&gt;-->
-
-<!--  </div>-->
   <div class=" mx-auto content max-w-hr">
     <CoolLightBox
       :items="images"
