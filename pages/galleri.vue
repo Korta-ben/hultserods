@@ -32,6 +32,15 @@
     components: {
       CoolLightBox,
     },
+    head () {
+      return {
+        title: "Kontakt",
+        meta: [
+          { hid: 'og-title', property: 'og:title', content: "Galleri"},
+          // other meta
+        ]
+      }
+    },
     data(){
       return {
         // images: [

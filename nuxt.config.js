@@ -8,9 +8,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Nyplockade blommor av hög kvalitet' }
     ],
     link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/none.png' }
     ]
   },
 

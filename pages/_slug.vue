@@ -17,32 +17,16 @@ export default {
       `https://hultapi.kortaben.work/wp-json/wp/v2/pages?slug=${params.slug}`
     )
     return { data }
-
-
   },
-  // data () {
-  //   return {
-  //     slug:this.$route.params.slug,
-  //     pageBlocks:[]
-  //   }
-  // },
-  //
-  // async asyncData (slug) {
-  //
-  //   const { data } = await axios.get(
-  //     `https://hultapi.kortaben.work/wp-json/wp/v2/pages?slug=`+slug
-  //   )
-  //   // return { data }
-  //
-  //   console.log(data)
-  //
-  //
-  // },
-  mounted() {
-    // console.log(this.$route.params.slug)
-  }
-
-
+  head () {
+    return {
+      title: this.data[0].title.rendered,
+      meta: [
+        { hid: 'og-title', property: 'og:title', content: this.data[0].title.rendered},
+        // other meta
+      ]
+    }
+  },
 }
 
 </script>

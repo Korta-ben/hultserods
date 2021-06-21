@@ -36,6 +36,15 @@
 
   import axios from 'axios';
   export default {
+    head () {
+      return {
+        title: "Kontakt",
+        meta: [
+          { hid: 'og-title', property: 'og:title', content: "Kontakt"},
+          // other meta
+        ]
+      }
+    },
     data(){
       return {
         card:[],
