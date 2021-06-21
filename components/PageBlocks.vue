@@ -19,7 +19,7 @@
 
     <div class="mx-auto  max-w-hr flex mb-cardBottom md:mb-40 mt-24">
       <NuxtLink
-        class="mx-auto   text-xl font-bold text-hultWhite bg-hultRoseGold w-72 py-5 px-14 text-center"
+        class="mx-auto  transition  text-xl font-bold text-hultWhite bg-hultRoseGold hover:bg-hultLightGreen w-72 py-5 px-14 text-center"
         to="/kontakt"
       >
         Kontakta

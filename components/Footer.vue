@@ -10,7 +10,7 @@
 
     </div>
     <div v-html="contactColum"
-         class="space-y-10 text-base leading-normal text-center md:text-left md:w-72">
+         class="space-y-4 text-base leading-normal text-center md:text-left md:w-72">
     </div>
   </div>
 

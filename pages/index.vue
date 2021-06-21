@@ -1,8 +1,10 @@
 <template>
-  <div id="home">
+  <div id="home" class="px-5 ">
     <HeaderImage />
 
-    <PageContent :page-content="pageContent" />
+      <PageContent :page-content="pageContent"  />
+
+
     <PageBlocks :page-blocks="pageBlocks" />
   </div>
 </template>

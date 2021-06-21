@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-32">
+  <div>
     <div  class="max-w-full m-auto flex flex-col justify-items-center bg-center bg-no-repeat"
           style="background-image: url('https://hultapi.kortaben.work/wp-content/uploads/2021/05/Rectangle-7.png')">
 

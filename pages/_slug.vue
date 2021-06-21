@@ -1,8 +1,8 @@
 <template>
-  <div id="home"  class="mt-24 content-bg px-5">
+  <div id="home"  class="px-5  lg:content-bg">
 
     <!--    <HeaderImage />-->
-        <PageContent :page-content="data[0]" />
+        <PageContent :page-content="data[0]" class=""/>
         <PageBlocks :page-blocks="data[0].acf" />
   </div>
 </template>

@@ -49,13 +49,7 @@ div.navicon{
 
 }
 
-.content-bg{
-  background-image: url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/blomma_liggande-1.svg'),
-  url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/blomma_liggande-2.svg');
-  background-position: left -55%, right 155% ;
-  background-repeat: no-repeat;
 
-}
 .font-crimson {
   font-family: "Crimson Text",serif;
 }
@@ -63,10 +57,18 @@ div.navicon{
 .nuxt-link-active{
   @apply text-hultRoseGold font-bold;
 }
-#home .manual-card-heading{
-  text-align: center;
-}
+/*#home .manual-card-heading{*/
+/*  text-align: center;*/
+/*}*/
 @responsive {
+  .content-bg{
+    /*background-image: url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/blomma_liggande-1.svg'),*/
+    /*url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/blomma_liggande-2.svg');*/
+    /*background-position:0 -20%, right 40%;*/
+    /*background-repeat: no-repeat;*/
+
+  }
+
   .manual-card:first-child {
     @apply m-0 mr-manualCardGap
   }

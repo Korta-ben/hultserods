@@ -32,7 +32,7 @@
       <li v-for="item in menuItems" :key="item.id" class="p-4  md:text-center md:inline-block">
         <NuxtLink
           :to="item.slug"
-        >
+        class="hover:text-hultRoseGold">
           {{ item.title }}
         </NuxtLink>
       </li>
