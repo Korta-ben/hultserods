@@ -77,14 +77,14 @@ div.navicon{
     @apply m-0 ml-manualCardGap
   }
   .post-card > div:nth-child(odd) {
-    background-image: url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/liggande_vit-1.svg');
+    background-image: url('https://hultapi.kortaben.work/wp-content/uploads/2021/06/liggande_vit-1.svg');
 
     background-repeat: no-repeat;
     background-position:90% 120%;
   }
   .post-card > div:nth-child(even) {
      @apply flex-row-reverse ;
-    background-image: url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/liggande_vit-2.svg');
+    background-image: url('https://hultapi.kortaben.work/wp-content/uploads/2021/06/liggande_vit-2.svg');
 
     background-repeat: no-repeat;
     background-position: 30% 120%;
