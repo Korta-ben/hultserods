@@ -1,5 +1,6 @@
+require('dotenv').config()
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+    // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Nyplockade blommor av hög kvalitet',
     htmlAttrs: {
@@ -11,7 +12,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Nyplockade blommor av hög kvalitet' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/none.png' }
+      { rel: 'icon', type: 'image/png', href: '/favicon-logo.png' }
     ]
   },
 
@@ -35,6 +36,7 @@ export default {
     '@nuxtjs/tailwindcss',
     // google font
     '@nuxtjs/google-fonts'
+
   ],
   googleFonts: {
     /* module options */
@@ -48,8 +50,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // apollo for graphql
-    // '@nuxtjs/apollo',
+    '@nuxtjs/dotenv',
   ],
 
   // apollo: {
@@ -67,5 +68,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+
 }

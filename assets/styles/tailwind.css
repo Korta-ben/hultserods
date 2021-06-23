@@ -62,10 +62,10 @@ div.navicon{
 /*}*/
 @responsive {
   .content-bg{
-    /*background-image: url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/blomma_liggande-1.svg'),*/
-    /*url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/blomma_liggande-2.svg');*/
-    /*background-position:0 -20%, right 40%;*/
-    /*background-repeat: no-repeat;*/
+    background-image: url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/blomma_liggande-1.svg'),
+    url('http://hultapi.kortaben.work/wp-content/uploads/2021/06/blomma_liggande-2.svg');
+    background-position:0 -20%, right 40%;
+    background-repeat: no-repeat;
 
   }
 
