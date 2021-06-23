@@ -17,7 +17,6 @@
         }
       },
       async fetch () {
-        console.log(process.env.API_SECRET)
       const { data } = await
         axios.get(`https://graph.instagram.com/me/media?access_token=${process.env.API_SECRET}&fields=media_url,media_type,permalink`)
         this.photos = data.data.filter(photo => photo.media_type != "VIDEO").slice(0, 4)
