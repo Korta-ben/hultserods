@@ -1,8 +1,8 @@
 <template>
-  <div id="home" class="px-5 bg-contain">
+  <div id="home" class="px-5 2xl:px-0">
     <HeaderImage />
 
-      <PageContent :page-content="pageContent"  />
+      <PageContent :page-content="pageContent"  class="lg:content-bg"/>
 
 
     <PageBlocks :page-blocks="pageBlocks" />

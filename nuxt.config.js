@@ -1,6 +1,10 @@
 require('dotenv').config()
 export default {
-    // Global page headers: https://go.nuxtjs.dev/config-head
+  env: {
+
+    apiSecret: process.env.API_SECRET
+  },
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Nyplockade blommor av hög kvalitet',
     htmlAttrs: {

@@ -91,5 +91,3 @@ sw.*
 *.swp
 /.idea
 
-# env file
-.env

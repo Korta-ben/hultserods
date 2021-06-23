@@ -1,5 +1,5 @@
 <template>
-  <div id="home"  class="px-5  lg:content-bg">
+  <div id="home"  class="px-5 lg:content-bg">
 
     <!--    <HeaderImage />-->
         <PageContent :page-content="data[0]" class=""/>

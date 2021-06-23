@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-24">
+  <div class="mt-24 ">
     <div class="content  max-w-hr m-auto bg-hultWhite ">
       <div>
         <img :src="featureImage">
