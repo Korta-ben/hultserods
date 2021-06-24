@@ -61,6 +61,7 @@ div.navicon{
 /*  text-align: center;*/
 /*}*/
 @responsive {
+
   .content-bg{
     background-image: url('https://hultapi.kortaben.work/wp-content/uploads/2021/06/bg-left.png'),
     url('https://hultapi.kortaben.work/wp-content/uploads/2021/06/bg-right.png');
