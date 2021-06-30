@@ -39,12 +39,12 @@
       <h2 class="max-w-hr text-center text-4xl leading-10 pb-8 font-crimson">Fina ord från våra gäster</h2>
       <div class="flex flex-wrap justify-evenly md:items-center">
         <div class="order-2 w-1/2 md:w-11 md:order-1">
-          <img src="~/assets/images/line-5.svg" @click="clickedPrevious(customerRviews)" class="reviewNav">
+          <img src="~/assets/images/line-5.svg" @click="clickedPrevious(customerRviews)" class="reviewNav cursor-pointer	">
         </div>
 <!--        <Review  v-for="(review, i) in customerRviews" :key="i" :review="review"/>-->
         <Review  :review="review"/>
         <div class="order-3 mw-1/2 md:w-11">
-          <img src="~/assets/images/line-4.svg" @click="clickedNext(customerRviews)" class="reviewNav">
+          <img src="~/assets/images/line-4.svg" @click="clickedNext(customerRviews)" class="reviewNav cursor-pointer	">
         </div>
       </div>
 

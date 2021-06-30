@@ -14,7 +14,7 @@ export default {
 
   async asyncData ({ params }) {
     const { data } = await axios.get(
-      `https://hultapi.kortaben.work/wp-json/wp/v2/pages?slug=${params.slug}`
+      `https://api.hultserodstradgardar.com/wp-json/wp/v2/pages?slug=${params.slug}`
     )
     return { data }
   },

@@ -52,7 +52,7 @@
     },
 
     async fetch() {
-      const { data } = await axios.get('https://hultapi.kortaben.work/wp-json/wp/v2/pages/26')
+      const { data } = await axios.get('https://api.hultserodstradgardar.com/wp-json/wp/v2/pages/26')
 
       this.card = data
     },

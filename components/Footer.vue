@@ -28,7 +28,7 @@
       }
     },
     async fetch() {
-      this.footerItems = await fetch('https://hultapi.kortaben.work/wp-json/wp/v2/ui_setting/102')
+      this.footerItems = await fetch('https://api.hultserodstradgardar.com/wp-json/wp/v2/ui_setting/102')
         .then(res =>
           res.json()
         )

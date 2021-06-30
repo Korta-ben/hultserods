@@ -51,7 +51,7 @@
 
 
     async fetch() {
-      let { data } = await axios.get('https://hultapi.kortaben.work/wp-json/wp/v2/gallery/232')
+      let { data } = await axios.get('https://api.hultserodstradgardar.com/wp-json/wp/v2/gallery/232')
       // console.log(data.acf.images)
       this.items = data
       // console.log( this.items)
