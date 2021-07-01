@@ -42,7 +42,7 @@
           <img src="~/assets/images/line-5.svg" @click="clickedPrevious(customerRviews)" class="reviewNav cursor-pointer	">
         </div>
 <!--        <Review  v-for="(review, i) in customerRviews" :key="i" :review="review"/>-->
-        <Review  :review="review"/>
+        <Review  :review="initReview"/>
         <div class="order-3 mw-1/2 md:w-11">
           <img src="~/assets/images/line-4.svg" @click="clickedNext(customerRviews)" class="reviewNav cursor-pointer	">
         </div>
@@ -70,8 +70,8 @@ export default {
   data (){
     return {
       current:0,
-      reviewLength: this.pageBlocks?.reviews.length,
-      review:this.pageBlocks?.reviews[0],
+      // reviewLength: this.pageBlocks?.reviews.length,
+      review: this.pageBlocks?.reviews ?  this.pageBlocks?.reviews[0] : false ,
     }
 
   },
@@ -91,6 +91,10 @@ export default {
       return this.pageBlocks?.price_list || ''
     },
 
+      initReview() {
+        if( !this.review) { this.review = this.pageBlocks?.reviews[0] }
+        return this.review;
+      },
     customerRviews(){
       return this.pageBlocks?.reviews || ''
       // this.review = this.pageBlocks?.reviews[0]
@@ -101,17 +105,17 @@ export default {
   methods:{
     clickedPrevious(customerRviews){
       this.current = this.current + 1; // increase i by one
-      this.current = this.current % this.reviewLength; // if we've gone too high, start from `0` again
+      this.current = this.current % this.pageBlocks?.reviews.length; // if we've gone too high, start from `0` again
       // return arr[i]; // give us back the item of where we are now
-      // console.log(customerRviews[this.current])
+
       this.review = customerRviews[this.current]
     },
     clickedNext(customerRviews){
       if (this.current === 0) { // i would become 0
-        this.current = this.reviewLength; // so put it at the other end of the array
+        this.current = this.pageBlocks?.reviews.length; // so put it at the other end of the array
       }
       this.current = this.current - 1; // decrease by one
-      // console.log(customerRviews[this.current]); // give us back the item of where we are now
+      // give us back the item of where we are now
       this.review = customerRviews[this.current]
     }
   }
