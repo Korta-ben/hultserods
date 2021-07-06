@@ -1,8 +1,8 @@
 <template>
 
   <li class="flex flex-wrap justify-between">
-    <div v-html="priceList.item "></div>
-    <div v-html="priceList.price"></div>
+    <div class="w-3/4 md:w-auto" v-html="priceList.item "></div>
+    <div class="justify-self-end" v-html="priceList.price"></div>
 
   </li>
 

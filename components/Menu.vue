@@ -12,12 +12,8 @@
       :class="{hidden : showMenu}"
       class="menu text-right bg-hultChalk  flex flex-col justify-end uppercase   right-0 md:hidden"
     >
-      <li v-for="item in menuItems" :key="item.id" class="py-4 pl-4 pr-0">
-<!--        <NuxtLink-->
-<!--          :to="item.slug"-->
-<!--        >-->
-<!--          {{ item.title }}-->
-<!--        </NuxtLink>-->
+      <li v-for="item in menuItems" :key="item.id" class="py-4 pl-4 pr-5">
+
         <NuxtLink
           :to="item.slug"
         >
