@@ -17,7 +17,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon-logo.png' }
-    ]
+    ],
+    script: [
+      {
+        src: "https://cdn.usefathom.com/script.js", 'data-site':"TSRBOABY", 'data-spa':"auto", defer:"defer"
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
