@@ -60,7 +60,20 @@ div.navicon{
 /*#home .manual-card-heading{*/
 /*  text-align: center;*/
 /*}*/
+.header-img-bg{
+  background-image: url("https://api.hultserodstradgardar.com/wp-content/uploads/2021/07/BillingeBritta-4-mobile-header.png");
+}
+
+@screen md {
+  .header-img-bg{
+    background-image: url("https://api.hultserodstradgardar.com/wp-content/uploads/2021/05/Rectangle-7.png");
+  }
+}
+
 @responsive {
+
+
+
   .reviewBody p{
     @apply ease-in translate-y-4 sm:translate-y-0 sm:scale-95 duration-200;
   }
