@@ -1,5 +1,5 @@
 <template>
-  <nav class=" w-1/4 md:w-full md:mt-12 flex flex-col justify-end">
+  <nav class=" w-2/5 md:w-full md:mt-12 flex flex-col justify-end">
     <div
       class="float-right md:hidden mt-10 flex flex-col items-end"
       @click="showMenu = !showMenu"
@@ -12,7 +12,7 @@
       :class="{hidden : showMenu}"
       class="menu text-right bg-hultChalk  flex flex-col justify-end uppercase   right-0 md:hidden"
     >
-      <li v-for="item in menuItems" :key="item.id" class="py-4 pl-4 pr-5">
+      <li v-for="item in menuItems" :key="item.id" class="py-5 mr-5">
 
         <NuxtLink
           :to="item.slug"
