@@ -4,7 +4,7 @@
       <div>
         <img :src="featureImage">
       </div>
-      <div class=" px-16 md:px-28 pb-20">
+      <div class="px-8 sm:px-16 md:px-28 pb-20">
         <h2 class="text-4xl leading-10 break-words pb-8 md:w-1/2 font-crimson" v-html="pageTitle" />
         <div class=" leading-normal space-y-4" v-html="contentOnPage" />
       </div>

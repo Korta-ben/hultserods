@@ -8,7 +8,7 @@
     />
 
     <!--  price list   -->
-    <div v-if="priceLists " class="content md:pricelist  m-auto max-w-hr px-16  lg:px-28  mt-24">
+    <div v-if="priceLists " class="content md:pricelist  m-auto max-w-hr px-8 sm:px-16  lg:px-28  mt-24">
       <h2 class="font-crimson text-4xl leading-heading50 pb-6">
         Prislista
       </h2>
