@@ -7,9 +7,9 @@
       @close="index = null">
     </CoolLightBox>
 
-    <div class="images-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3   gap-5">
+    <div class="images-wrapper grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3   gap-5">
       <div
-        class="image bg-center bg-contain bg-no-repeat"
+        class="image bg-center bg-cover bg-no-repeat object-cover"
         v-for="(image, imageIndex) in images"
         :key="imageIndex"
         @click="index = imageIndex"
