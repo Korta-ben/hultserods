@@ -29,7 +29,7 @@
     },
     head () {
       return {
-        title: "Galleri",
+        title: "Galleris",
         meta: [
           { hid: 'og-title', property: 'og:title', content: "Galleri"},
           // other meta
