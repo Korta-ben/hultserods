@@ -3,7 +3,7 @@
     <!--text below content-->
     <div
       v-if="textBelowContent"
-      class="content m-auto px-16 md:px-28 leading-7  max-w-hr mt-24"
+      class="content m-auto px-8 md:px-28 leading-7  max-w-hr mt-24"
       v-html="textBelowContent"
     />
 
