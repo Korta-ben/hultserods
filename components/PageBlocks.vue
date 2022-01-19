@@ -10,7 +10,7 @@
     <!--  price list   -->
     <div v-if="priceLists " class="content md:pricelist  m-auto max-w-hr px-8 sm:px-16  lg:px-28  mt-24">
       <h2 class="font-crimson text-4xl leading-heading50 pb-6">
-        Prislista
+        Utbud
       </h2>
       <ul class="inline leading-7 text-base grid md:grid-cols-6">
         <PriceList v-for="(list, i) in priceLists" :key="i" :price-list="list" />
@@ -36,7 +36,7 @@
 
     <div v-if="customerRviews"
       class=" max-w-hr  mx-auto">
-      <h2 class="max-w-hr text-center text-4xl leading-10 pb-8 font-crimson">Fina ord från våra gäster</h2>
+      <h2 class="max-w-hr text-center text-4xl leading-10 pb-8 font-crimson">Fina ord från våra kunder</h2>
       <div class="flex flex-wrap justify-evenly md:items-center">
         <div class="order-2 w-1/2 md:w-11 md:order-1">
           <img src="~/assets/images/line-5.svg" @click="clickedPrevious(customerRviews)" class="reviewNav cursor-pointer	">
