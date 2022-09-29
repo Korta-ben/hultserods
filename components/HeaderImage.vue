@@ -8,14 +8,13 @@
         <h4 class="text-hultWhite ">Här odlar vi snittblommor med omtanke </h4>
         <h3 class="text-hultWhite font-crimson text-2xl">/ Britta</h3>
       </div>
-
-
-      <div class="text-right m-auto 2xl:container pt-12 text-xs pr-5  space-y-4">
-        Porträtt från ett trädgårdsreportage i Allt om trädgård- Fixa<br>
-        Fotograf: Josefin Widell Hultgren
-      </div>
-
     </div>
+
+    <div class="text-right m-auto 2xl:container pt-12 text-xs pr-5  space-y-4">
+      Porträtt från ett trädgårdsreportage i Allt om trädgård- Fixa<br>
+      Fotograf: Josefin Widell Hultgren
+    </div>
+
     <div class="m-auto max-w-hr flex ">
       <h2 class="max-w-hr text-4xl leading-10 pb-8 md:w-1/2 font-crimson ">Följ oss på
         Instagram</h2>
