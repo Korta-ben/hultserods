@@ -10,7 +10,10 @@
       </div>
 
 
-
+      <div class="text-right m-auto 2xl:container pt-12 text-xs pr-5  space-y-4">
+        Porträtt från ett trädgårdsreportage i Allt om trädgård- Fixa<br>
+        Fotograf: Josefin Widell Hultgren
+      </div>
 
     </div>
     <div class="m-auto max-w-hr flex ">
@@ -25,10 +28,7 @@
       </div>
     </div>
     <InstaFeed  />
-    <div class="text-right m-auto 2xl:container pt-12 text-xs pr-5  space-y-4">
-      Porträtt för ett kommande trädgårdsreportage i Allt om trädgård- Fixa <br>
-      Fotograf: Josefin Widell Hultgren
-    </div>
+
   </div>
 </template>
 
